@@ -21,3 +21,7 @@ We propose an innovative data augmentation strategy that generates all possible 
    http://foldxsuite.crg.eu/
 
 2、Python packages: Pytorch
+
+```
+pip install torch
+```
