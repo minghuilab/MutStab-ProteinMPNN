@@ -9,5 +9,15 @@ We propose an innovative data augmentation strategy that generates all possible 
 ### Installation
 
 
+#### I. PREREQUISITES
 
+<font size=4>
+ 
 
+1. FoldX
+
+   This is available at the FoldX website.
+
+   http://foldxsuite.crg.eu/
+
+2、Python packages: Pytorch
