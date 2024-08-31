@@ -348,7 +348,7 @@ class PremPS2(nn.Module):
         return results1
 
 mutsta_mpnn = PremPS2()
-mutsta_mpnn_weights = torch.load('/public/home/zff/MutStab-ProteinMPNN/Model/neigh2_mpnn.pt',map_location=torch.device('cpu'))
+mutsta_mpnn_weights = torch.load('~/MutStab-ProteinMPNN/Model/neigh2_mpnn.pt',map_location=torch.device('cpu'))
 mutsta_mpnn.load_state_dict(mutsta_mpnn_weights)
 
 mutsta_mpnn.eval()
