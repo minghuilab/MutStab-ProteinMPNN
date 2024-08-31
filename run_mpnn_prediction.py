@@ -35,18 +35,19 @@ parser.add_argument('-f', '--featurePath', type=str, help='The ProteinMPNN featu
 parser.add_argument('-o', '--output', type=str, help='Path to save the predition file')
 
 args = parser.parse_args()
-pdb_file = args.pdbfile
+pdb_file_path = args.pdbfile
+pdb_file = pdb_file_path.split('/')[-1]
+pdb_path = '/'.join(pdb_file_path.split('/')[:-1])
 mut_chain = args.mutation
 chain = mut_chain.split('_')[1]
 mut = mut_chain.split('_')[0]
 fea_path = args.featurePath
 output_path = args.output
 
-os.chdir('/public/home/zff/MutStab-ProteinMPNN/example/')
 
 # 对突变位点进行clean
 have_line = []
-with open(pdb_file,'r') as f:
+with open(pdb_file_path,'r') as f:
     for line1 in f:
         if line1[:4] == 'ATOM':
             have_line.append(line1)
