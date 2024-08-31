@@ -1,0 +1,2 @@
+PDB	Chain	mutation	output_logits	label	type
+Q14232	A	K11A	0.9990994930267334	1	Stabilizing
