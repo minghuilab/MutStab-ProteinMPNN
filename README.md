@@ -72,7 +72,7 @@ output_dir: Set the output path for ProteinMPNN embedding
 5. Predict
 
 ```
-python ~/MutStab-ProteinMPNN/example/run_mpnn_prediction.py -p Q14232.pdb -m K11A_A -f ~/MutStab-ProteinMPNN/example/embedding/ -o ~/MutStab-ProteinMPNN/example/
+python ~/MutStab-ProteinMPNN/example/run_mpnn_prediction.py -p ~/MutStab-ProteinMPNN/example/Q14232.pdb -m K11A_A -f ~/MutStab-ProteinMPNN/example/embedding/ -o ~/MutStab-ProteinMPNN/example/
 
 ```
 
