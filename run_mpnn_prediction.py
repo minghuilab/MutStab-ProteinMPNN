@@ -37,7 +37,6 @@ parser.add_argument('-o', '--output', type=str, help='Path to save the predition
 args = parser.parse_args()
 pdb_file_path = args.pdbfile
 pdb_file = pdb_file_path.split('/')[-1]
-pdb_path = '/'.join(pdb_file_path.split('/')[:-1])
 mut_chain = args.mutation
 chain = mut_chain.split('_')[1]
 mut = mut_chain.split('_')[0]
