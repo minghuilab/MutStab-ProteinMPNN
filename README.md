@@ -44,7 +44,7 @@ Place the PDB files that need to be calculated and FoldX in the same directory, 
 As shown in the following example:
 
 ```
-python ~/MutStab-ProteinMPNN/example/generate_mut_structure.py -w ~/MutStab-ProteinMPNN/example -p Q14232.pdb -m K11A_A
+python ~/MutStab-ProteinMPNN/generate_mut_structure.py -w ~/MutStab-ProteinMPNN/example -p Q14232.pdb -m K11A_A
 ```
 
 -w： Working directory for generating protein mutants
@@ -72,7 +72,7 @@ output_dir: Set the output path for ProteinMPNN embedding
 5. Predict
 
 ```
-python ~/MutStab-ProteinMPNN/example/run_mpnn_prediction.py -p ~/MutStab-ProteinMPNN/example/Q14232.pdb -m K11A_A -f ~/MutStab-ProteinMPNN/example/embedding/ -o ~/MutStab-ProteinMPNN/example/
+python ~/MutStab-ProteinMPNN/run_mpnn_prediction.py -p ~/MutStab-ProteinMPNN/example/Q14232.pdb -m K11A_A -f ~/MutStab-ProteinMPNN/example/embedding/ -o ~/MutStab-ProteinMPNN/example/
 
 ```
 
