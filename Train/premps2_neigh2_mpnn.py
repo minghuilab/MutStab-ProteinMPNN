@@ -29,7 +29,6 @@ import warnings
 # from pandarallel import pandarallel
 warnings.filterwarnings('ignore')
 
-## 读取数据，得到label标签
 workdir = '/public/home/zff/'
 
 f4038_scan = pd.read_csv('/public/home/zff/premps_deep/f4038scan.txt',sep='\t')
